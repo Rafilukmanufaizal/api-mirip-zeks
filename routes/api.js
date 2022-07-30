@@ -34,8 +34,8 @@ var cheerio = require('cheerio');
 var request = require('request');
 var fs = require('fs');
 var router  = express.Router();
-var creator = 'ZeeoneOfc' // ubah jadi nama lu
-const listkey = ["Alphabot","Zeeone","ZeeoneOfc"]; // ubah apikey nya, tambah aja klo mau
+var creator = 'Ezinter' // ubah jadi nama lu
+const listkey = ["Alphabot","Zeeone","ZeeoneOfc","Ezinter"]; // ubah apikey nya, tambah aja klo mau
 
 var { otakudesu, covid, ongoing, komiku, tebakgambar, surah, sholat, lirik, chara,wattpad, playstore, linkwa, pinterest ,igdl,igstory, igstalk,twitter,fbdown,youtube,ttdownloader} = require(__path + '/lib/scrape.js');
 var { color, bgcolor } = require(__path + '/lib/color.js');
@@ -105,7 +105,7 @@ var len = 15
 
     if (!apikey) return res.json(loghandler.apikey)
     if (!(apikeyInput && email)) return res.json(loghandler.notAddApiKey)
-    if (apikey != `${keyapi}`) return res.json(loghandler.invalidKey)
+    if (apikey != `${ezinter}`) return res.json(loghandler.invalidKey)
 
     try {
         lolkill.insert({
